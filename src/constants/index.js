@@ -31,9 +31,13 @@ export const navLinks = [
     title: "About"
   },
   {
-    id: "work",
-    title: "Work"
+    id: "projects",
+    title: "Projects"
   },
+  // {
+  //   id: "work",
+  //   title: "Work"
+  // },
   {
     id: "contact",
     title: "Contact"
@@ -54,7 +58,7 @@ const services = [
     icon: backend
   },
   {
-    title: "Content Creator",
+    title: "Desktop Development",
     icon: creator
   }
 ];
@@ -81,20 +85,12 @@ const technologies = [
     icon: reactjs
   },
   {
-    name: "Redux Toolkit",
-    icon: redux
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind
   },
   {
     name: "Node JS",
     icon: nodejs
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb
   },
   {
     name: "Three JS",

@@ -58,5 +58,5 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,
+  tripguide
 };
