@@ -8,14 +8,18 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: windows-latest
+    runs-on: windows-latest # Change to Windows if necessary
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          node-version: "20" # Explicitly set Node.js version for this action
 
       - name: Setup Node
         uses: actions/setup-node@v3
+        with:
+          node-version: "20" # Explicitly set Node.js version
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -32,7 +36,7 @@ jobs:
   deploy:
     name: Deploy
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     if: github.ref == 'refs/heads/main'
 
     steps:
